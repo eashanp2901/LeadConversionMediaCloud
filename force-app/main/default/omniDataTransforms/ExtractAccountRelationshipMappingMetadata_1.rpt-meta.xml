@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;accountRelationMapping&quot; : [ {
+    &quot;relationshipName&quot; : &quot;Text&quot;,
+    &quot;isDefault&quot; : false
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ExtractAccountRelationshipMappingMetadata</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ExtractAccountRelationshipMappingMetadataCustom3041</globalKey>
+        <inputFieldName>accountRelationMapping:Relationship_Name__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ExtractAccountRelationshipMappingMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>accountRelationMapping:relationshipName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ExtractAccountRelationshipMappingMetadataCustom3816</globalKey>
+        <inputFieldName>accountRelationMapping:Is_Default__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ExtractAccountRelationshipMappingMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>accountRelationMapping:isDefault</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>leadType</filterValue>
+        <globalKey>ExtractAccountRelationshipMappingMetadataCustom372</globalKey>
+        <inputFieldName>Lead_Type__c</inputFieldName>
+        <inputObjectName>Account_Relations_For_Lead_Conv__mdt</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ExtractAccountRelationshipMappingMetadata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>accountRelationMapping</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>accountType</filterValue>
+        <globalKey>ExtractAccountRelationshipMappingMetadataCustom1705</globalKey>
+        <inputFieldName>Account_Type__c</inputFieldName>
+        <inputObjectName>Account_Relations_For_Lead_Conv__mdt</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ExtractAccountRelationshipMappingMetadata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>accountRelationMapping</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;leadType&quot; : &quot;Advertiser&quot;,
+  &quot;accountType&quot; : &quot;Agency&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>ExtractAccountRelationshipMappingMetadata_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

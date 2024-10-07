@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDO_Sales_Deal_Approved_Date__c</fullName>
+    <description>What: Stored the date the deal registraion was approved (via field updates) and is used in lead conversion so the opportunity has the date the deal was registered and can be used to count when the deal expires</description>
+    <label>Deal Approved Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for storing the various settings which are used during lead conversion via Omniscript</description>
+    <label>Lead Conversion Omniscript Setting</label>
+    <pluralLabel>Lead Conversion Omniscript Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

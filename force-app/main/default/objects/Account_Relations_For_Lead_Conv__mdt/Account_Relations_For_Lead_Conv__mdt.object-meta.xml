@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata for storing the account relations which are to be used to link the accounts with the converted lead.</description>
+    <label>Account Relations For Lead Conv</label>
+    <pluralLabel>Account Relations For Lead Conv</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

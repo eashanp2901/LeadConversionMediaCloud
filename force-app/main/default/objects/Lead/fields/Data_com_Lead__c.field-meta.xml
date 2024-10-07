@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_com_Lead__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates that this lead was generated from the Data.com Web-to-Lead form, and is used by workflow to change the lead to the Data.com Record Type.</description>
+    <label>Data.com Lead</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

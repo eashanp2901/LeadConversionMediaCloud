@@ -1,0 +1,21 @@
+<template>
+    <div if:true={isLoading}>
+        <lightning-spinner variant="base" size="medium"></lightning-spinner>
+    </div>
+    <div if:false={isLoading} class="slds-grid slds-grid_vertical">
+        <div class="slds-col slds-p-vertical_x-small">
+            <lightning-datatable
+            key-field="AccountId"
+            data={tableRecords}
+            columns={columns}
+            wrap-table-header = "true"
+            class="slds-max-medium-table_stacked"
+            onrowselection={handleRowSelection}
+            ></lightning-datatable>
+        </div>
+        <br/>
+        <div>
+            <lightning-button variant="destructive-text" label="Remove" onclick={handleRemoveRecords} class="slds-m-left_x-small" disabled={disableRemoveButton}></lightning-button>
+        </div>
+    </div>    
+</template>

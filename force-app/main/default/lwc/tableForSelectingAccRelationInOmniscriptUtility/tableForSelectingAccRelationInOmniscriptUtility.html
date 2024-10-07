@@ -1,0 +1,22 @@
+<template>
+    <div if:true={isLoading}>
+        <lightning-spinner variant="base" size="medium"></lightning-spinner>
+    </div>
+    <div if:false={isLoading} class="slds-grid slds-grid_vertical">
+        <div class="slds-col slds-box">
+            <template for:each={records} for:item="record">
+                <lightning-combobox
+                data-id={record.id}
+                key={record.id}
+                name="progress"
+                label={record.name}
+                value={record.relation}
+                placeholder="Select Account Relation"
+                variant="label-inline"
+                options={options}
+                onchange={handleChange} >
+                </lightning-combobox>                
+            </template>
+        </div>
+    </div>
+</template>
